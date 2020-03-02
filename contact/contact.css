@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+breakpoint {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+    breakpoint {
+        max-width: 48%;
+
+    }
+}
+
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
+
+body {
+    background-image: url("../images/fondo_contact.jpg");
+    background-size: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, black, goldenrod);
+    height: 60px;
+}
+
+.tamañologo {
+    width: 100px;
+    position: fixed;
+}
+
+
+.fuerapuntos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fuerapuntos li {
+    margin-right: 20px;
+    font-family: "Special Elite";
+}
+
+.fuerapuntos li a {
+    text-decoration: none;
+    color: black;
+}
+
+.mcmorella {
+    width: 30vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Special Elite";
+    font-size: 50px;
+    text-decoration: underline dotted goldenrod;
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-top: 125px;
+    font-family: "Gloria Hallelujah";
+}

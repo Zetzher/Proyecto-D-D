@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+breakpoint {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+    breakpoint {
+        max-width: 48%;
+
+    }
+}
+
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, black, goldenrod);
+    height: 60px;
+}
+
+.tamañologo {
+    width: 100px;
+    position: fixed;
+}
+
+
+.fuerapuntos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fuerapuntos li {
+    margin-right: 20px;
+    font-family: "Special Elite";
+}
+
+.fuerapuntos li a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+}
+
+.register_box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-top: 100px;
+    width: 30vw;
+    height: 30vw;
+    background-color: goldenrod;
+}
+
+.login_box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-top: 100px;
+    width: 30vw;
+    height: 30vw;
+    background-color: goldenrod;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input {
+    border-radius: 40%;
+    width: 20vw;
+    height: 4vw;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+button {
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+    margin-left: 145px;
+    margin-top: 30px;
+}

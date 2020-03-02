@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+breakpoint {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+    breakpoint {
+        max-width: 48%;
+
+    }
+}
+
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, black, goldenrod);
+    height: 60px;
+}
+
+.tamañologo {
+    width: 100px;
+    position: fixed;
+}
+
+.fuerapuntos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fuerapuntos li {
+    margin-right: 20px;
+    font-family: "Special Elite";
+}
+
+.fuerapuntos li a {
+    text-decoration: none;
+    color: black;
+}
+
+.homeimg {
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'Patrick Hand';
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: 'Patrick Hand';
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.secimghome div {
+    margin-top: 50px;
+    padding: 20px, 0px;
+}
+
+.arkdrake {
+    width: 30vw;
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.dadosrol {
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 20vw;
+}
+
+.estela {
+    width: 20vw;
+}
+
+.secimghome h1 {
+    margin-top: 80px;
+}

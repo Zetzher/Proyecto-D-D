@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.prinLogo {
+    position: cover;
+    background-image: linear-gradient(to bottom, #DC143C, #DAA520);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonToBegin {
+    font-family: Permanent Marker;
+    border: 2px solid darkred;
+    border-radius: 30%;
+    position: fixed;
+    margin-top: 40%;
+    font-size: 25px;
+    padding: 15px;
+    background-color: darkgoldenrod;
+    background-image: linear-gradient(to bottom, #DC143C, #DAA520);
+    opacity: 0.9;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+breakpoint {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+    breakpoint {
+        max-width: 48%;
+    }
+}
+
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
