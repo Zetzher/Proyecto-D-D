@@ -21,7 +21,14 @@ const imgSorcerer = document.querySelector(".sorcerered");
 const imgWarlock = document.querySelector(".warlocked");
 const imgWizard = document.querySelector(".wizarded");
 
-
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
 
 //RAZAS//

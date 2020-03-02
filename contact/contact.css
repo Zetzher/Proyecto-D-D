@@ -28,34 +28,41 @@ body {
     background-size: 100vw;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+
+.topnav {
+    overflow: hidden;
     background-image: linear-gradient(to right, black, goldenrod);
-    height: 60px;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: gold;
+    padding: 14px 19px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: 'Alfa Slab One';
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .tamañologo {
     width: 100px;
-    position: fixed;
-}
-
-
-.fuerapuntos {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.fuerapuntos li {
-    margin-right: 20px;
-    font-family: "Special Elite";
-}
-
-.fuerapuntos li a {
-    text-decoration: none;
-    color: black;
 }
 
 .mcmorella {
