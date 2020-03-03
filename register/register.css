@@ -88,6 +88,12 @@ form input {
     font-size: 15px;
 }
 
+#confirmpassword {
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+}
+
 h2 {
     font-size: 30px;
     text-decoration: underline;

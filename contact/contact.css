@@ -24,9 +24,10 @@ breakpoint {
 }
 
 body {
-    background-image: url("../images/fondo_contact.jpg");
-    background-size: 100vw;
+    background-image: url("../images/img_classes/contacttheme.jpg");
+    background-size: cover;
 }
+
 
 
 .topnav {

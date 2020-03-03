@@ -10,154 +10,611 @@
 </head>
 
 <body>
-    <section>
-        Nombre del personaje<input type="text" name="Nombre PNJ">
-        Jugador<input type="text" name="Jugador"><br>
-        Clase y niveles<input type="text" name="Clase y Niveles">
-        Raza<input type="text" name="Raza">
-        Origen/Region<input type="text" name="Origen Región"><br>
+    <section class="datosjugador">
+        <div class="infopnj">
+            Nombre del personaje<input type="text" name="Nombre PNJ">
+            Jugador<input type="text" name="Jugador">
+        </div>
+        <div class="infopnj1">
+            Clase y niveles<input type="text" name="Clase y Niveles">
+            Raza<input type="text" name="Raza">
+            Origen/Region<input type="text" name="Origen Región">
+        </div>
+        <div class="infopnj2">
         Altura<input type="text" name="Altura">
         Peso<input type="text" name="Peso">
         Deidad<input type="text" name="Deidad">
         Alineamiento<input type="text" name="Alineamiento">
-        Tamaño<input type="text" name="Tamaño"><br><br>
+        Tamaño<input type="text" name="Tamaño">
+    </div>
     </section>
 
     <!--Table-->
-    <table class="first_table">
-        <div>Nombre<br>Caract.</div>
-        <div>Punt.<br>Caract.</div>
-        <div>Mod.<br>Caract.</div>
-        <div>Puntuación<br>Temporal</div>
-        <div>Mod.<br>Temporal<br></div>
-        Fuerza<br>
-        Destreza<br>
-        Constitución<br>
-        Inteligencia<br>
-        Sabiduría<br>
-        Carisma
+    <section class="firstsection">
+        <table>
+            <tr>
+                <th>Nombre<br>Caract.</th>
+                <th>Punt.<br>Caract.</th>
+                <th>Mod.<br>Caract.</th>
+                <th>Puntuación<br>Temporal</th>
+                <th>Mod.<br>Temporal</th>
+            </tr>
+            <tr>
+                <td>Fuerza</td>
+            </tr>
+            <tr>
+                <td>Destreza</td>
+            </tr>
+            <tr>
+                <td>Constitución</td>
+            </tr>
+            <tr>
+                <td>Inteligencia</td>
+            </tr>
+            <tr>
+                <td>Sabiduría</td>
+            </tr>
+            <tr>
+                <td>Carisma</td>
+            </tr>
+        </table>
+
+        <!--Table-->
+        <table>
+            <tr>
+                <th>
+                    Tiros de salvación
+                </th>
+                <th>
+                    Total
+                </th>
+                <th>
+                    Salvación Base
+                </th>
+                <th>
+                    Mod.<br>Base
+                </th>
+                <th>
+                    Mod.<br>de Magia
+                </th>
+                <th>
+                    Mod.<br>Varios
+                </th>
+                <th>
+                    Modificadores<br>Temporales
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Fortaleza
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Reflejos
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Voluntad
+                </td>
+            </tr>
+        </table>
+        <!--Table-->
+        <table>
+            <tr>
+                <th>
+                    Combate
+                </th>
+                <th>
+                    Total
+                </th>
+                <th>
+                    Ataque Base
+                </th>
+                <th>
+                    Mod.<br>Fuerza
+                </th>
+                <th>
+                    Mod.<br>Tamaño
+                </th>
+                <th>
+                    Mod.<br>Varios
+                </th>
+                <th>
+                    Modificadores<br>Temporales
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Cuerpo a<br>cuerpo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A distancia
+                </td>
+            </tr>
+        </table>
+
+        <!--Table-->
+        <table>
+            <th>
+                Arma/Ataque
+            </th>
+            <th>
+                Bonif. de Ataque
+            </th>
+            <th>
+                Daño
+            </th>
+            <th>
+                Crítico
+            </th>
+            <tr>
+                <th>
+                    Notas
+                </th>
+            </tr>
+        </table>
+
+        <!--Table-->
+        <table>
+            <th>
+                Arma/Ataque
+            </th>
+            <th>
+                Bonif. de Ataque
+            </th>
+            <th>
+                Daño
+            </th>
+            <th>
+                Crítico
+            </th>
+            <tr>
+                <th>
+                    Notas
+                </th>
+            </tr>
+        </table>
+
+        <!--Table-->
+        <table>
+            <th>
+                Armadura/Obj. Protector
+            </th>
+            <th>
+                Tipo
+            </th>
+            <th>
+                Bonif. Armadura
+            </th>
+            <th>
+                Bonif. Des. Max
+            </th>
+            <tr>
+                <td>
+                    Velocidad
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fallo conjuro
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Peso
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Penal. Armadura
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Notas:
+                </th>
+            </tr>
+        </table>
+
+        <!--Table-->
+        <table>
+            <tr>
+                <th>
+                    Munición
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Virotes de Ballesta<br>(pequeños)
+                </th>
+            </tr>
+        </table>
+        <table>
+            <th>
+                Dote/Rasgo/Aptitud Especial
+            </th>
+        </table>
+    </section>
+    <!--Dejar espacios de input-->
+<section class="secondsection">
+    <table>
+        <!--Table-->
+        <th>
+            Clase de<br>Armadura
+        </th>
+        <th>
+            Total
+        </th>
+        <th>
+            Bonif.<br>Armadura
+        </th>
+        <th>
+            Bonif.<br>Escudo
+        </th>
+        <th>
+            Bonif.<br>Destreza
+        </th>
+        <th>
+            Bonif.<br>Tamaño
+        </th>
+        <th>
+            Armad.<br>Natural
+        </th>
+        <th>
+            Bonif.<br>Desvío
+        </th>
+        <th>
+            Bonif.<br>Varios
+        </th>
+    </table>
+    <!--Table-->
+    <table>
+        <th>
+            Puntos de Golpe
+        </th>
+        <th>
+            Total
+        <th>
+            Heridas<br>Recibidas
+        </th>
+        <th>
+            PG<br>Actuales
+        </th>
+        <th>
+            Daño atenuado<br>Recibido
+        </th>
+    </table>
+    <!--Input-->
+    <table>
+        <th>
+            DE TOQUE<br>
+            Clase de <br>Armadura
+        </th>
+        <th>
+            Desprevenido
+            <br>
+            Clase de <br>Armadura
+        </th>
+        <tr>
+            <th>
+                Resist. de<br> conjuros
+            </th>
+            <th>
+                Velocidad de<br>Movimiento
+            </th>
+        </tr>
     </table>
 
-    <!--Table-->
-    Tiros de salvación
-    Fortaleza
-    Reflejos
-    Voluntad
 
     <!--Table-->
-    Combate
-    Cuerpo a Cuerpo
-    A distancia
+    <table>
+        <th>
+            Habilidades
+        </th>
+        <th>
+            Rangos max.
+        </th>
+        <tr>
+            <th>
+                Nombre de las habilidades
+            </th>
+            <th>
+                Cact. Claves
+            </th>
+            <th>
+                Mod.<br>Habilidad
+            </th>
+            <th>
+                Mod.<br>Caract.
+            </th>
+            <th>
+                Rangos
+            </th>
+            <th>
+                Mod.<br>Varios
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Abrir cerraduras
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Averiguar intenciones
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Artesanía
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Avistar
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Buscar
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Concentración
+            </th>
+            <th>
+                CON
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Descifrar Escritura
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Diplomacia
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Disfrazarse
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Engañar
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Equilibrio
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Escapismo
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Esconderse
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Escuchar
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Falsificar
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Interpetrar
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Intimidar
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Inutilizar mecanismo
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Juego de manos/Hurtar
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Montar
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Moverse sigilosamente
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Nadar
+            </th>
+            <th>
+                FUE
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Piruetas
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Reunir información
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Saber (Local/Región)
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Saltar
+            </th>
+            <th>
+                FUE
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Sanar
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Superviviencia
+            </th>
+            <th>
+                SAB
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Tasación
+            </th>
+            <th>
+                INT
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Trato con animales
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Trepar
+            </th>
+            <th>
+                FUE
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Uso de objeto mágico
+            </th>
+            <th>
+                CAR
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Uso de cuerdas
+            </th>
+            <th>
+                DES
+            </th>
+        </tr>
+    </table>
 
-    <!--Table-->
-    Arma/Ataque
-    Bonif. de Ataque
-    Daño
-    Crítico
-    Notas
-
-    <!--Table-->
-    Arma/Ataque
-    Bonif. de Ataque
-    Daño
-    Crítico
-    Notas
-
-    <!--Table-->
-    Armadura/Obj. Protector
-    Tipo
-    Bonif. Armadura
-    Bonif. Des. Max
-    Velocidad
-    Fallo conjuro
-    Pero
-    Penal. Armadura
-    Notas:
-
-    <!--Table-->
-    Munición
-    Virotes de Ballesta (pequeños)
-
-    Dote/Rasgo/Aptitud Especial
-    <!--Dejar espacios de input-->
-
-
-    <!--Table-->
-    Clase de Armadura
-    Total
-    Bonif. Armadura
-    Bonif. Escudo
-    Bonif. Destreza
-    Bonif. Tamaño
-    Armad. Natural
-    Bonif. Desvío
-    Bonif. Varios
-
-    <!--Table-->
-    Puntos de Golpe
-    Total
-    Heridas recibidas
-    PG Actuales
-    Daño Atenuado Recibido
-
-    <!--Input-->
-    De toque
-    Clase de Armadura
-
-    Desprevenido
-    Clase de Armadura
-
-    Resist. de conjuros
-
-    Velocidad de movimiento
-
-    <!--Table-->
-    Habilidades
-    Nombre de la habilidad Cact. Claves Mod. Habilidad Mod. Caract. Rangos Mod. Varios
-    Abrir cerraduras DES
-    Averiguar intenciones INT
-    Artesanía () SAB
-    Avistar SAB
-    Buscar INT
-    Concentración CON
-    Descifrar Escritura INT
-    Diplomacia CAR
-    Disfrazarse CAR
-    Engañar CAR
-    Equilibrio DES
-    Escapismo DES
-    Esconderse DES
-    Escuchar SAB
-    Falsificar INT
-    Interpetrar() SAB
-    Intimidar CAR
-    Inutilizar mecanismo INT
-    Juego de manos/Hurtar DES
-    Montar DES
-    Moverse sigilosamente DES
-    Nadar FUE
-    Piruetas DES
-    Reunir información CAR
-    Saber (Local/Región) INT
-    Saltar FUE
-    Sanar SAB
-    Superviviencia SAB
-    Tasación INT
-    Trato con animales CAR
-    Trepar FUE
-    Uso de objeto mágico CAR
-    Uso de cuerdas DES
-
-    Caract Clave
-    Mod. Habilidad
-    Mod. Caract.
-    Rangos
-    Mod. Varios
-
-    Notas
-
-    Pertenencias
-
+    <table>
+        <th>
+            Notas
+        </th>
+    </table>
+    <table>
+        <th>
+            Pertenencias
+        </th>
+    </table>
+</section>
     <script type="text/javascript" src="ficha.js"></script>
 </body>
 
