@@ -1,18 +1,18 @@
-"use strict";
+"use strict"
 
 class Validator {
     constructor(userName, email, password) {
         this.userName = userName;
         this.email = email;
-        this.password = password;
+        this.password = password
     }
 
     checkUserName() {
-        return this.userName ? true : false
+        return this.userName ? true : false;
     }
 
     checkEmail() {
-        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(this.email) ? true : false
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(this.email) ? true : false;
     }
 
     checkPassword() {
@@ -26,10 +26,10 @@ class Validator {
     }
 
     errorCreator(message, location) {
-        let div = document.createElement("div")
-        div.setAttribute("class", "error")
-        div.innerHTML = message
-        form.insertBefore(div, location)
+        let div = document.createElement("div");
+        div.setAttribute("class", "error");
+        div.innerHTML = message;
+        form.insertBefore(div, location);
     }
 
     deleteErrors() {
@@ -45,10 +45,10 @@ class SignUpValidator extends Validator {
     }
 
     checkEmailInDB(usersDB) {
-        let userExists = false;
+        let userExist = false;
 
         if (!usersDB) {
-            return true;
+            return true
         } else {
             usersDB.forEach(user => {
                 if (user.email === this.email) {
@@ -56,7 +56,7 @@ class SignUpValidator extends Validator {
                 }
             })
         }
-        return userExists;
+        return userExist;
     }
 
     checkRepeatPassword() {
@@ -65,7 +65,11 @@ class SignUpValidator extends Validator {
         } else {
             return false;
         }
+
     }
+
+
+
 }
 
 class LogInValidator extends Validator {
@@ -74,10 +78,10 @@ class LogInValidator extends Validator {
     }
 
     checkEmailInDB(string) {
-        if (!userDB) {
+        if (!usersDB) {
             return false
         } else {
-            userDB.forEach(user => {
+            usersDB.forEach(user => {
                 if (user.email === string) {
                     return true
                 }

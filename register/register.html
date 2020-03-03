@@ -19,7 +19,8 @@
 <body>
     <header>
         <nav class="topnav">
-            <a href="../home/home.html" class="active"><img src='../images/logo_dd.png' class='tamañologo' alt='Logo D&D'></a>
+            <a href="../home/home.html" class="active"><img src='../images/logo_dd.png' class='tamañologo'
+                    alt='Logo D&D'></a>
             <div id="myLinks">
                 <a href="../home/home.html">Home</a>
                 <a href="../begin/begin.html">Knowledge</a>
@@ -36,26 +37,28 @@
     <section>
         <main class="main-forms">
             <section class="login_form">
-        
-              <h2>Register</h2>
-        
-              <div class="form-wrapper">
-                <form action="">
-                  <input type="email" id="email" placeholder="Email" />
-                  <input type="password" id="password" placeholder="Password" />
-                  <input type="password" id="confirmpassword" placeholder="Confirm Password" />
-        
-                  <button type="submit" class="button" id="login-button">Empezar</button>
-                </form>
-                <div class="errors-container"></div>
-              </div>
-        
+
+                <h2>Register</h2>
+
+                <div id="form_wrapper">
+                    <form id="signup_form" action="">
+                        <input type="text" id="name" placeholder="Nombre" autocomplete="off" required />
+                        <input type="email" id="email" placeholder="Email" />
+                        <input type="password" id="password" placeholder="Password" />
+                        <input type="password" id="confirmpassword" placeholder="Confirm Password" />
+
+                        <button type="submit" class="button" id="registerbutton">Empezar</button>
+                    </form>
+                    <div class="errors-container"></div>
+                </div>
+
             </section>
-          </main>        
+        </main>
 
     </section>
-    <script type="text/javascript" src="../login/user.js"></script>
-    <script type="text/javascript" src="../login/validator.js"></script>
+    <script type="text/javascript" src="../register/user.js"></script>
+    <script type="text/javascript" src="../register/validator.js"></script>
+    <script type="text/javascript" src="../register/signup.js"></script>
 </body>
 
 </html>
