@@ -23,10 +23,50 @@ breakpoint {
     }
 }
 
+.topnav {
+    overflow: hidden;
+    background-image: linear-gradient(to right, black, goldenrod);
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: gold;
+    padding: 14px 19px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: 'Alfa Slab One';
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.tamañologo {
+    width: 100px;
+}
+
+body {
+    margin-right: 10px;
+}
 
 table {
     border: 2px solid black;
     margin-left: 5px;
+    margin-bottom: 10px;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -42,6 +82,18 @@ table td {
 .datosjugador {
     font-size: 17px;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/img_princ_datos_player.jpg");
+    background-size: 15vw;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.datosjugador div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .datosjugador input {
@@ -63,7 +115,121 @@ table td {
     height: 30px;
 }
 
-.firstsection {
-    float: left;
+input {
+    width: 35px;
+    text-align: center;
+    height: 35px;
+    border: 2px solid goldenrod;
 }
 
+.pg {
+    float: left;
+    margin-right: 20px;
+}
+
+.penalarmor {
+    float: left;
+    margin-right: 40px;
+}
+
+.tirsalv {
+    margin-right: 20px;
+}
+
+.tirsalv td {
+    padding: 5px;
+}
+
+.tirsalv th {
+    padding: 5px;
+}
+
+.caarmor th {
+    padding: 5px;
+}
+
+.caarmor td {
+    padding: 5px;
+}
+
+.armaatak {
+    display: flex;
+}
+
+.stats {
+    float: left;
+    margin-right: 10px;
+}
+
+.combat td {
+    padding: 5px;
+}
+
+.combat th {
+    padding: 5px;
+}
+
+.armobjpro {
+    float: left;
+    margin-right: 16px;
+    background-image: url("./images/564d705a9ee07188a16c6684ef730e88.jpg");
+    background-size: 15vw;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.armaatak table {
+    background-image: url("./images/espada-rosas-dibujo-tatuaje-dibujado-mano-ilustracion-aislado-sobre-fondo-blanco_183342-9.jpg");
+    background-size: 13vw;
+    background-repeat: no-repeat;
+}
+
+.ammo {
+    height: 500px;
+    width: 500px;
+    text-align: left;
+    background-image: url("./images/25512607-esquema-ballesta-en-blanco.jpg");
+    background-size: 35vw;
+    background-repeat: no-repeat;
+}
+
+.ammo td {
+   padding: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.subtitle {
+    font-size: 19px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.maintitle {
+    font-size: 18px;
+    font-family: "cinzel";
+}
+
+.skills td input {
+    width: 50px;
+}
+
+.skilltitle {
+    font-size: 17px;
+    font-family: "cinzel";
+}
+
+textarea {
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+}
+
+#max {
+    width: 120px;
+}
+
+input {
+    font-size: 17px;
+}

@@ -1,4 +1,4 @@
-let form = document.getElementById("signup-form");
+let form = document.getElementById("signup_form");
 let userName = document.getElementById("name");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
@@ -16,6 +16,7 @@ signUpButton.addEventListener("click", function (event) {
     if (checkValidUser()) {
         console.log("User registered")
         createUser(name.value, email.value, password.value)
+        window.location.href = "../home/home.html";//para redirigir al usuario a la página web.
     }
 })
 
@@ -26,17 +27,17 @@ function checkValidUser() {
     let validUser = true;
 
     if (!signUpValidator.checkUserName()) {
-        signUpValitador.errorCreator("Por favor, introduczca un Username válido", userName);
+        signUpValidator.errorCreator("Por favor, introduzca un Username válido", userName);
         validUser = false;
     }
 
     if (!signUpValidator.checkEmail()) {
-        signUpValidatos.errorCreator("Por favor, introduce una dirección de mail válida", email);
+        signUpValidator.errorCreator("Por favor, introduce una dirección de mail válida", email);
         validUser = false;
     }
 
     if (!signUpValidator.checkPassword()) {
-        signUpValidatos.errorCreator("Por favor, introduce una contraseña válida", password);
+        signUpValidator.errorCreator("Por favor, introduce una contraseña válida", password);
         validUser = false;
     }
 

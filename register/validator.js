@@ -45,7 +45,7 @@ class SignUpValidator extends Validator {
     }
 
     checkEmailInDB(usersDB) {
-        let userExist = false;
+        let userExist = true;
 
         if (!usersDB) {
             return true

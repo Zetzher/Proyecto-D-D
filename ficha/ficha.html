@@ -6,615 +6,1137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crea tu ficha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../ficha/ficha.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Cinzel|Great+Vibes|Lobster+Two|Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <nav class="topnav">
+            <a href="../home/home.html" class="active"><img src='../images/logo_dd.png' class='tamañologo' alt='Logo D&D'></a>
+            <div id="myLinks">
+                <a href="../home/home.html">Home</a>
+                <a href="../begin/begin.html">Knowledge</a>
+                <a href="../ficha/ficha.html">Ficha</a>
+                <a href="../contact/contact.html">Contact</a>
+                <a href="../login/login.html">Login</a>
+                <a href="../register/register.html">Register</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
     <section class="datosjugador">
         <div class="infopnj">
-            Nombre del personaje<input type="text" name="Nombre PNJ">
-            Jugador<input type="text" name="Jugador">
+            <div class="title">Nombre del personaje<input type="text" name="Nombre PNJ"></div>
+            <div class="title">Jugador<input type="text" name="Jugador"></div>
         </div>
         <div class="infopnj1">
-            Clase y niveles<input type="text" name="Clase y Niveles">
-            Raza<input type="text" name="Raza">
-            Origen/Region<input type="text" name="Origen Región">
+            <div class="title">Clase y niveles<input type="text" name="Clase y Niveles"></div>
+            <div class="title">Raza<input type="text" name="Raza"></div>
+            <div class="title">Origen/Region<input type="text" name="Origen Región"></div>
         </div>
         <div class="infopnj2">
-        Altura<input type="text" name="Altura">
-        Peso<input type="text" name="Peso">
-        Deidad<input type="text" name="Deidad">
-        Alineamiento<input type="text" name="Alineamiento">
-        Tamaño<input type="text" name="Tamaño">
-    </div>
+            <div class="title">Altura<input type="text" name="Altura"></div>
+            <div class="title">Peso<input type="text" name="Peso"></div>
+            <div class="title">Deidad<input type="text" name="Deidad"></div>
+            <div class="title">Alineamiento<input type="text" name="Alineamiento"></div>
+            <div class="title">Tamaño<input type="text" name="Tamaño"></div>
+        </div>
     </section>
 
     <!--Table-->
-    <section class="firstsection">
+    <section>
+        <table class="stats">
+            <tr>
+                <th class="subtitle">Nombre<br>Caract.</th>
+                <th class="subtitle">Punt.<br>Caract.</th>
+                <th class="subtitle">Mod.<br>Caract.</th>
+                <th class="subtitle">Puntuación<br>Temporal</th>
+                <th class="subtitle">Mod.<br>Temporal</th>
+            </tr>
+            <tr>
+                <td class="maintitle">Fuerza</td>
+                <td><input type="number" name="punt.fuerza"></td>
+                <td><input type="number" name="mod.fuerza"></td>
+                <td><input type="number" name="punt.temp.fuerza"></td>
+                <td><input type="number" name="mod.temp.fuerza"></td>
+            </tr>
+            <tr>
+                <td class="maintitle">Destreza</td>
+                <td><input type="number" name="punt.destreza"></td>
+                <td><input type="number" name="mod.destreza"></td>
+                <td><input type="number" name="punt.temp.destreza"></td>
+                <td><input type="number" name="mod.temp.destreza"></td>
+            </tr>
+            <tr>
+                <td class="maintitle">Constitución</td>
+                <td><input type="number" name="punt.constitución"></td>
+                <td><input type="number" name="mod.constitución"></td>
+                <td><input type="number" name="punt.temp.constitución"></td>
+                <td><input type="number" name="mod.temp.constitución"></td>
+            </tr>
+            <tr>
+                <td class="maintitle">Inteligencia</td>
+                <td><input type="number" name="punt.inteligencia"></td>
+                <td><input type="numbernumber" name="mod.inteligencia"></td>
+                <td><input type="numbernumber" name="punt.temp.inteligencia"></td>
+                <td><input type="numbernumber" name="mod.temp.inteligencia"></td>
+            </tr>
+            <tr>
+                <td class="maintitle">Sabiduría</td>
+                <td><input type="number" name="punt.sabiduría"></td>
+                <td><input type="number" name="mod.sabiduría"></td>
+                <td><input type="number" name="punt.temp.sabiduría"></td>
+                <td><input type="number" name="mod.temp.sabiduría"></td>
+            </tr>
+            <tr>
+                <td class="maintitle">Carisma</td>
+                <td><input type="number" name="punt.carisma"></td>
+                <td><input type="number" name="mod.carisma"></td>
+                <td><input type="number" name="punt.temp.carisma"></td>
+                <td><input type="number" name="mod.temp.carisma"></td>
+            </tr>
+        </table>
+        <table class="caarmor">
+            <th class="title">
+                CA
+            </th>
+            <th class="subtitle">
+                Total
+            </th>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Armadura
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Escudo
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Destreza
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Tamaño
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Armad.<br>Natural
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Desvío
+            </th>
+            <th> </th>
+            <th class="subtitle">
+                Bonif.<br>Varios
+            </th>
+            <tr>
+                <td class="maintitle">
+                    Clase Armadura
+                </td>
+                <td><input type="number" name="esp.blanco"></td>
+                <td>=</td>
+                <td><input type="number" name="total"></td>
+                <td>+</td>
+                <td><input type="number" name="bonif.armadura"></td>
+                <td>+</td>
+                <td><input type="number" name="bonif.escudo"></td>
+                <td>+</td>
+                <td><input type="number" name="bonif.destreza"></td>
+                <td>+</td>
+                <td><input type="number" name="bonig.tamaño"></td>
+                <td>+</td>
+                <td><input type="number" name="armad.natural"></td>
+                <td>+</td>
+                <td><input type="number" name="bonif.desvío"></td>
+                <td>+</td>
+                <td><input type="number" name="bonif.varios"></td>
+            </tr>
+        </table>
+        <!--Table-->
+        <table class="pg">
+            <th class="title">
+                PG
+            </th>
+            <th class="subtitle">
+                Total
+            <th class="subtitle">
+                Heridas<br>Recibidas
+            </th>
+            <th class="subtitle">
+                PG<br>Actuales
+            </th>
+            <th class="subtitle">
+                Daño atenuado<br>Recibido
+            </th>
+            <tr>
+                <td class="maintitle">
+                    Puntos de Golpe
+                </td>
+                <td><input type="number" name="total"></td>
+                <td><input type="number" name="heridas.recibidas"></td>
+                <td><input type="number" name="pg.actuales"></td>
+                <td><input type="number" name="daño.atenuado.recibido"></td>
+            </tr>
+        </table>
         <table>
             <tr>
-                <th>Nombre<br>Caract.</th>
-                <th>Punt.<br>Caract.</th>
-                <th>Mod.<br>Caract.</th>
-                <th>Puntuación<br>Temporal</th>
-                <th>Mod.<br>Temporal</th>
+                <th class="subtitle">
+                    DE TOQUE<br>
+                    Clase de <br>Armadura
+                </th>
+                <td><input type="number" name="de.toque"></td>
+                <th class="subtitle">
+                    Desprevenido
+                    <br>
+                    Clase de <br>Armadura
+                </th>
+                <td><input type="number" name="desprevenido"></td>
             </tr>
             <tr>
-                <td>Fuerza</td>
+                <th class="subtitle">
+                    Resist. de<br> conjuros
+                </th>
+                <td><input type="number" name="resist.conjuros"></td>
+                <th class="subtitle">
+                    Velocidad de<br>Movimiento
+                </th>
+                <td><input type="number" name="vel.movimiento"></td>
+            </tr>
+        </table>
+
+        <table class="penalarmor">
+            <th class="subtitle">
+                Penaliz.<br>Armadura
+            </th>
+            <td>
+            <td><input type="text" name="penalz.armadura"></td>
+            </td>
+        </table>
+        <table>
+            <th class="subtitle">
+                Reducción de<br>daño
+            </th>
+            <td>
+            <td><input type="text" name="reduc.daño"></td>
+            </td>
+        </table>
+        <table>
+            <tr>
+                <th class="subtitle">
+                    Modificador de<br>iniciativa
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Bonif.<br>Destreza
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Modificadores
+                </th>
             </tr>
             <tr>
-                <td>Destreza</td>
-            </tr>
-            <tr>
-                <td>Constitución</td>
-            </tr>
-            <tr>
-                <td>Inteligencia</td>
-            </tr>
-            <tr>
-                <td>Sabiduría</td>
-            </tr>
-            <tr>
-                <td>Carisma</td>
+                <td><input type="number" name="modificador.iniciativa"></td>
+                <td>=</td>
+                <td><input type="number" name="bonif.destreza"></td>
+                <td>+</td>
+                <td><input type="number" name="modificadores"></td>
             </tr>
         </table>
 
         <!--Table-->
-        <table>
+        <table class="tirsalv">
             <tr>
-                <th>
-                    Tiros de salvación
+                <th class="title">
+                    Tiros de<br>salvación
                 </th>
-                <th>
+                <th class="subtitle">
                     Total
                 </th>
-                <th>
-                    Salvación Base
+                <th> </th>
+                <th class="subtitle">
+                    Salvación<br>Base
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>Base
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>de Magia
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>Varios
                 </th>
-                <th>
-                    Modificadores<br>Temporales
+                <th> </th>
+                <th class="subtitle">
+                    Mod.<br>Temporales
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Modificadores<br>Condicionales
                 </th>
             </tr>
             <tr>
-                <td>
+                <td class="maintitle">
                     Fortaleza
                 </td>
+                <td><input type="number" name="total"></td>
+                <td>=</td>
+                <td><input type="number" name="salvacion.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.de.magia"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+                <td>+</td>
+                <td><input type="number" name="punt.carisma"></td>
+                <td>+</td>
+                <td><input type="text" name="punt.carisma"></td>
             </tr>
             <tr>
-                <td>
+                <td class="maintitle">
                     Reflejos
                 </td>
+                <td><input type="number" name="total"></td>
+                <td>=</td>
+                <td><input type="number" name="salvacion.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.de.magia"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.temporales"></td>
+                <td>+</td>
+                <td><input type="text" name="punt.carisma"></td>
             </tr>
             <tr>
-                <td>
+                <td class="maintitle">
                     Voluntad
                 </td>
+                <td><input type="number" name="total"></td>
+                <td>=</td>
+                <td><input type="number" name="salvacion.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.de.magia"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.temporales"></td>
+                <td>+</td>
+                <td><input type="text" name="punt.carisma"></td>
             </tr>
         </table>
         <!--Table-->
-        <table>
+        <table class="combat">
             <tr>
-                <th>
+                <th class="title">
                     Combate
                 </th>
-                <th>
+                <th class="subtitle">
                     Total
                 </th>
-                <th>
-                    Ataque Base
+                <th> </th>
+                <th class="subtitle">
+                    Ataque<br>Base
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>Fuerza
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>Tamaño
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Mod.<br>Varios
                 </th>
-                <th>
+                <th> </th>
+                <th class="subtitle">
                     Modificadores<br>Temporales
                 </th>
             </tr>
             <tr>
-                <td>
+                <td class="maintitle">
                     Cuerpo a<br>cuerpo
                 </td>
+                <td><input type="number" name="total"></td>
+                <td>=</td>
+                <td><input type="number" name="ataque.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.fuerza"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.tamaño"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.temporales"></td>
             </tr>
             <tr>
-                <td>
+                <td class="maintitle">
                     A distancia
                 </td>
+                <td><input type="number" name="total"></td>
+                <td>=</td>
+                <td><input type="number" name="ataque.base"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.fuerza"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.tamaño"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.temporales"></td>
             </tr>
         </table>
-
         <!--Table-->
-        <table>
-            <th>
-                Arma/Ataque
-            </th>
-            <th>
-                Bonif. de Ataque
-            </th>
-            <th>
-                Daño
-            </th>
-            <th>
-                Crítico
-            </th>
-            <tr>
-                <th>
-                    Notas
+        <div class="armaatak">
+            <table class=>
+                <th class="title">
+                    Arma/Ataque
                 </th>
-            </tr>
-        </table>
-
-        <!--Table-->
-        <table>
-            <th>
-                Arma/Ataque
-            </th>
-            <th>
-                Bonif. de Ataque
-            </th>
-            <th>
-                Daño
-            </th>
-            <th>
-                Crítico
-            </th>
-            <tr>
-                <th>
-                    Notas
+                <th class="subtitle">
+                    Bonif. de<br>Ataque
                 </th>
-            </tr>
-        </table>
+                <th class="subtitle">
+                    Daño
+                </th>
+                <th class="subtitle">
+                    Crítico
+                </th>
+                <tr>
+                    <td>
+                        <input type="text" name="nombre.arma/ataque">
+                    </td>
+                    <td><input type="number" name="bonif. ataque"></td>
+                    <td><input type="number" name="daño"></td>
+                    <td><input type="text" name="crítico"></td>
+                </tr>
+                <tr>
+                    <th class="title">
+                        Notas
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="8" cols="40"></textarea>
+                    </td>
+                </tr>
+            </table>
 
+            <!--Table-->
+            <table>
+                <th class="title">
+                    Arma/Ataque
+                </th>
+                <th class="subtitle">
+                    Bonif. de<br>Ataque
+                </th>
+                <th class="subtitle">
+                    Daño
+                </th>
+                <th class="subtitle">
+                    Crítico
+                </th>
+                <tr>
+                    <td>
+                        <input type="text" name="nombre.arma/ataque">
+                    </td>
+                    <td><input type="number" name="bonif. ataque"></td>
+                    <td><input type="number" name="daño"></td>
+                    <td><input type="text" name="crítico"></td>
+                </tr>
+                <tr>
+                    <th class="title">
+                        Notas
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="8" cols="40"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <!--Table-->
-        <table>
-            <th>
-                Armadura/Obj. Protector
-            </th>
-            <th>
+        <table class="armobjpro">
+            <th class="title">
+                Armadura<br>Obj. Protector
+                </tdclass="maintitle">
+            <th class="subtitle">
                 Tipo
             </th>
-            <th>
-                Bonif. Armadura
+            <th class="subtitle">
+                Bonif.<br>Armadura
             </th>
-            <th>
-                Bonif. Des. Max
+            <th class="subtitle">
+                Bonif.<br>Des. Max
             </th>
             <tr>
                 <td>
-                    Velocidad
+                    <input type="text" name="nombre.armadura.obj.protector">
                 </td>
+                <td>
+                    <input type="text" name="tipo">
+                </td>
+                <td><input type="number" name="bonif.armadura"></td>
+                <td><input type="number" name="bonif.des.max"></td>
             </tr>
             <tr>
-                <td>
+                <td class="subtitle">
+                    Velocidad
+                </td>
+                <td class="subtitle">
                     Fallo conjuro
                 </td>
             </tr>
             <tr>
-                <td>
-                    Peso
-                </td>
+                <td><input type="number" name="velocidad"></td>
+                <td><input type="number" name="fallo.conjuro"></td>
             </tr>
             <tr>
-                <td>
+                <td class="subtitle">
+                    Peso
+                </td>
+                <td class="subtitle">
                     Penal. Armadura
                 </td>
             </tr>
             <tr>
-                <th>
+                <td><input type="number" name="peso"></td>
+                <td><input type="number" name="penal.armadura"></td>
+            </tr>
+            <tr>
+                <th class="title">
                     Notas:
                 </th>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="8" cols="60"></textarea>
+                </td>
             </tr>
         </table>
 
         <!--Table-->
-        <table>
+        <table class="ammo">
             <tr>
-                <th>
+                <th class="title">
                     Munición
                 </th>
             </tr>
             <tr>
-                <th>
+                <td class="subtitle">
                     Virotes de Ballesta<br>(pequeños)
-                </th>
+                </td>
+                <td><input type="text" name="cant.munición"></td>
+                <td><input type="text" name="cant.munición"></td>
+                <td><input type="text" name="cant.munición"></td>
+                <td><input type="text" name="cant.munición"></td>
+                <td><input type="text" name="cant.munición"></td>
+                <td><input type="text" name="cant.munición"></td>
+                </div>
             </tr>
         </table>
         <table>
-            <th>
+            <th class="title">
                 Dote/Rasgo/Aptitud Especial
-            </th>
+                </td>
+                <tr>
+                    <td>
+                        <textarea rows="20" cols="90"></textarea>
+                    </td>
+                </tr>
         </table>
     </section>
     <!--Dejar espacios de input-->
-<section class="secondsection">
-    <table>
+    <section>
         <!--Table-->
-        <th>
-            Clase de<br>Armadura
-        </th>
-        <th>
-            Total
-        </th>
-        <th>
-            Bonif.<br>Armadura
-        </th>
-        <th>
-            Bonif.<br>Escudo
-        </th>
-        <th>
-            Bonif.<br>Destreza
-        </th>
-        <th>
-            Bonif.<br>Tamaño
-        </th>
-        <th>
-            Armad.<br>Natural
-        </th>
-        <th>
-            Bonif.<br>Desvío
-        </th>
-        <th>
-            Bonif.<br>Varios
-        </th>
-    </table>
-    <!--Table-->
-    <table>
-        <th>
-            Puntos de Golpe
-        </th>
-        <th>
-            Total
-        <th>
-            Heridas<br>Recibidas
-        </th>
-        <th>
-            PG<br>Actuales
-        </th>
-        <th>
-            Daño atenuado<br>Recibido
-        </th>
-    </table>
-    <!--Input-->
-    <table>
-        <th>
-            DE TOQUE<br>
-            Clase de <br>Armadura
-        </th>
-        <th>
-            Desprevenido
-            <br>
-            Clase de <br>Armadura
-        </th>
-        <tr>
-            <th>
-                Resist. de<br> conjuros
+        <table class="skills">
+            <th class="title">
+                Habilidades
             </th>
-            <th>
-                Velocidad de<br>Movimiento
+            <th> </th>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+            <th class="title">
+                Rangos max.
             </th>
-        </tr>
-    </table>
+            <td><input type="text" id="max" name="rangos.max"></td>
+            <tr>
+                <th class="subtitle">
+                    Nombre de las habilidades
+                </th>
+                <th class="subtitle">
+                    Cact. Claves
+                </th>
+                <th class="subtitle">
+                    Mod.<br>Habilidad
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Mod.<br>Caract.
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Rangos
+                </th>
+                <th> </th>
+                <th class="subtitle">
+                    Mod.<br>Varios
+                </th>
+                <th> </th>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Abrir cerraduras
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Averiguar intenciones
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Artesanía
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Avistar
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            <tr>
+                <th class="maintitle">
+                    Buscar
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Concentración
+                </th>
+                <th class="skilltitle">
+                    CON
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Descifrar Escritura
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Diplomacia
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Disfrazarse
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Engañar
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Equilibrio
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Escapismo
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Esconderse
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Escuchar
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Falsificar
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Interpetrar
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Intimidar
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Inutilizar mecanismo
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Juego de manos/Hurtar
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Montar
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Moverse sigilosamente
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Nadar
+                </th>
+                <th class="skilltitle">
+                    FUE
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Piruetas
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Reunir información
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Saber (Local/Región)
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Saltar
+                </th>
+                <th class="skilltitle">
+                    FUE
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Sanar
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Superviviencia
+                </th>
+                <th class="skilltitle">
+                    SAB
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Tasación
+                </th>
+                <th class="skilltitle">
+                    INT
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Trato con animales
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Trepar
+                </th>
+                <th class="skilltitle">
+                    FUE
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Uso de objeto mágico
+                </th>
+                <th class="skilltitle">
+                    CAR
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+            <tr>
+                <th class="maintitle">
+                    Uso de cuerdas
+                </th>
+                <th class="skilltitle">
+                    DES
+                </th>
+                <td><input type="number" name="mod.habilidad"></td>
+                <td>=</td>
+                <td><input type="number" name="mod.caract."></td>
+                <td>+</td>
+                <td><input type="number" name="rangos"></td>
+                <td>+</td>
+                <td><input type="number" name="mod.varios"></td>
+            </tr>
+        </table>
 
-
-    <!--Table-->
-    <table>
-        <th>
-            Habilidades
-        </th>
-        <th>
-            Rangos max.
-        </th>
-        <tr>
-            <th>
-                Nombre de las habilidades
-            </th>
-            <th>
-                Cact. Claves
-            </th>
-            <th>
-                Mod.<br>Habilidad
-            </th>
-            <th>
-                Mod.<br>Caract.
-            </th>
-            <th>
-                Rangos
-            </th>
-            <th>
-                Mod.<br>Varios
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Abrir cerraduras
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Averiguar intenciones
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Artesanía
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Avistar
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Buscar
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Concentración
-            </th>
-            <th>
-                CON
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Descifrar Escritura
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Diplomacia
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Disfrazarse
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Engañar
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Equilibrio
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Escapismo
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Esconderse
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Escuchar
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Falsificar
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Interpetrar
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Intimidar
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Inutilizar mecanismo
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Juego de manos/Hurtar
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Montar
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Moverse sigilosamente
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Nadar
-            </th>
-            <th>
-                FUE
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Piruetas
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Reunir información
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Saber (Local/Región)
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Saltar
-            </th>
-            <th>
-                FUE
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Sanar
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Superviviencia
-            </th>
-            <th>
-                SAB
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Tasación
-            </th>
-            <th>
-                INT
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Trato con animales
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Trepar
-            </th>
-            <th>
-                FUE
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Uso de objeto mágico
-            </th>
-            <th>
-                CAR
-            </th>
-        </tr>
-        <tr>
-            <th>
-                Uso de cuerdas
-            </th>
-            <th>
-                DES
-            </th>
-        </tr>
-    </table>
-
-    <table>
-        <th>
-            Notas
-        </th>
-    </table>
-    <table>
-        <th>
-            Pertenencias
-        </th>
-    </table>
-</section>
+        <table>
+            <th class="title">
+                Notas
+            </th>
+            <tr>
+                <td>
+                    <textarea rows="8" cols="86"></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <th class="title">
+                Pertenencias
+            </th>
+            <th class="title">
+                Pertenencias
+            </th>
+            <tr>
+                <td>
+                    <textarea rows="8" cols="40"></textarea>
+                </td>
+                <td>
+                    <textarea rows="8" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="8" cols="40"></textarea>
+                </td>
+                <td>
+                    <textarea rows="8" cols="40"></textarea>
+                </td>
+            </tr>
+        </table>
+    </section>
     <script type="text/javascript" src="ficha.js"></script>
 </body>
 

@@ -10,8 +10,8 @@ function myFunction() {
 'use strict'
 
 class User {
-  constructor(user, email, password){
-  this.user = user;
+  constructor(name, email, password){
+  this.name = name;
   this.email = email;
   this.password = password;
   }
