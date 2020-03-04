@@ -76,6 +76,12 @@ form input {
     margin-top: 50px;
 }
 
+#name {
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+}
+
 #email {
     width: 200px;
     height: 25px;
