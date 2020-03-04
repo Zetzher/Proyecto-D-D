@@ -258,3 +258,36 @@ body {
 .races img {
     border: 8px outset yellowgreen;
 }
+
+.races div:hover{
+    -webkit-animation: text-shadow-pop-bottom 2s both;
+	        animation: text-shadow-pop-bottom 2s both;
+}
+
+@-webkit-keyframes text-shadow-pop-bottom {
+    0% {
+      text-shadow: 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0.5;
+    }
+    100% {
+      text-shadow: 0 1px goldenrod, 0 2px goldenrod, 0 3px goldenrod, 0 4px goldenrod, 0 5px goldenrod, 0 6px goldenrod, 0 7px goldenrod, 0 8px goldenrod;
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+              opacity: 0.5;
+    }
+  }
+  @keyframes text-shadow-pop-bottom {
+    0% {
+      text-shadow: 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod, 0 0 goldenrod;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      text-shadow: 0 1px goldenrod, 0 2px goldenrod, 0 3px goldenrod, 0 4px goldenrod, 0 5px goldenrod, 0 6px goldenrod, 0 7px goldenrod, 0 8px goldenrod;
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+  }
+  

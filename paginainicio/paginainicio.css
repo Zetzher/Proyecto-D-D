@@ -1,3 +1,25 @@
+breakpoint {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+    breakpoint {
+        max-width: 48%;
+    }
+}
+
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
+
+
+
+
 body {
     margin: auto;
     display: flex;
@@ -20,31 +42,81 @@ body {
     position: fixed;
     margin-top: 40%;
     font-size: 25px;
-    padding: 15px;
+    padding: 30px 80px;
     background-color: darkgoldenrod;
     background-image: linear-gradient(to bottom, #DC143C, #DAA520);
     opacity: 0.9;
     text-decoration: none;
     color: black;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+    animation: color-change-5x 8s linear infinite alternate both;
+    -webkit-animation: focus-in-contract-bck 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract-bck 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+        background: #19dcea;
+    }
 
-breakpoint {
-    max-width: 100%;
-    display: inline-block;
-}
+    25% {
+        background: #b22cff;
+    }
 
-/* 2 columnas para tablets */
-@media (min-width: 420px) {
-    breakpoint {
-        max-width: 48%;
+    50% {
+        background: #ea2222;
+    }
+
+    75% {
+        background: #f5be10;
+    }
+
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+        background: #3bd80d;
     }
 }
 
-/* 4 columnas para grandes dispositivos*/
-@media (min-width: 760px) {
-    breakpoint {
-        max-width: 24%;
+@keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+        background: #19dcea;
+    }
+
+    25% {
+        background: #b22cff;
+    }
+
+    50% {
+        background: #3bd80d;
+    }
+
+    75% {
+        background: orangered;
+    }
+
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 0.8;
+        background: goldenrod;
     }
 }

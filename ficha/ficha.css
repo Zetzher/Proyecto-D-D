@@ -33,6 +33,10 @@ breakpoint {
     display: none;
 }
 
+.space{
+    width: 150px;
+}
+
 .topnav a {
     color: gold;
     padding: 14px 19px;
@@ -120,6 +124,9 @@ input {
     text-align: center;
     height: 35px;
     border: 2px solid goldenrod;
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    cursor: url(http://cur.cursors-4u.net/others/oth-5/oth498.cur), auto !important;
 }
 
 .pg {
@@ -131,6 +138,22 @@ input {
     float: left;
     margin-right: 40px;
 }
+
+.mochila {
+    background-image: url("./images/ilus-mochila.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 5vw;
+}
+
+textarea {
+    background-image: url("./images/notes.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 5vw;
+    cursor: url(http://cur.cursors-4u.net/others/oth-5/oth498.cur), auto !important;
+}
+
 
 .tirsalv {
     margin-right: 20px;

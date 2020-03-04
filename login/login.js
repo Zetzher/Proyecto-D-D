@@ -20,7 +20,6 @@ buttonLogin.addEventListener("click", function (event) {
         if (password.value === usersDB[i].password && email.value === usersDB[i].email) {
             createCurrentUser(usersDB[i])
                 window.location.href = "../home/home.html";
-            
         }
     }
 })
