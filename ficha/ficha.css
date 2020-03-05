@@ -333,3 +333,52 @@ input {
     height: 50px;
     border-radius: 25%;
 }
+
+#calcularModIniciativa {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#calcularTiroFortaleza {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#calcularTiroReflejos {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#calcularTiroVoluntad {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#calcularCombateCuerpo {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#calcularCombateDistancia {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.button_classes {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border-radius: 25%;
+}

@@ -277,9 +277,12 @@
             <tr>
                 <td><input type="number" id="modificadorDeIniciativa" name="modificador.iniciativa"></td>
                 <td>=</td>
-                <td><input type="number" id="bonifDestreza" name="bonif.destreza"></td>
+                <td><input type="number" id="iniDestreza" name="bonif.destreza"></td>
                 <td>+</td>
-                <td><input type="number" id="modificadores" name="modificadores"></td>
+                <td><input type="number" id="iniModificadores" name="modificadores"></td>
+                <td>
+                    <button type="button" id="calcularModIniciativa">Calcula</button>
+                </td>
             </tr>
         </table>
 
@@ -321,55 +324,64 @@
                 <td class="maintitle">
                     Fortaleza
                 </td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" id="totalFortaleza" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="salvacion.base"></td>
+                <td><input type="number" id="salvacionBaseFortaleza" name="salvacion.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.base"></td>
+                <td><input type="number" id="modBaseFortaleza" name="mod.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.de.magia"></td>
+                <td><input type="number" id="modDeMagiaFortaleza" name="mod.de.magia"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="modVariosFortaleza" name="mod.varios"></td>
                 <td>+</td>
-                <td><input type="number" name="punt.carisma"></td>
+                <td><input type="number" id="modTemporalesFortaleza" name="mod.temporales"></td>
                 <td>+</td>
-                <td><input type="text" name="punt.carisma"></td>
+                <td><input type="text" id="modCondicionalesFortaleza" name="mod.condicionales"></td>
+                <td>
+                    <button type="button" id="calcularTiroFortaleza">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <td class="maintitle">
                     Reflejos
                 </td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" id="totalReflejos" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="salvacion.base"></td>
+                <td><input type="number" id="salvacionBaseReflejos" name="salvacion.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.base"></td>
+                <td><input type="number" id="modBaseReflejos" name="mod.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.de.magia"></td>
+                <td><input type="number" id="modDeMagiaReflejos" name="mod.de.magia"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="modVariosReflejos" name="mod.varios"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.temporales"></td>
+                <td><input type="number" id="modTemporalesReflejos" name="mod.temporales"></td>
                 <td>+</td>
-                <td><input type="text" name="punt.carisma"></td>
+                <td><input type="text" id="modCondicionalesReflejos" name="mod.condicionales"></td>
+                <td>
+                    <button type="button" id="calcularTiroReflejos">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <td class="maintitle">
                     Voluntad
                 </td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" id="totalVoluntad" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="salvacion.base"></td>
+                <td><input type="number" id="salvacionBaseVoluntad" name="salvacion.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.base"></td>
+                <td><input type="number" id="modBaseVoluntad" name="mod.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.de.magia"></td>
+                <td><input type="number" id="modDeMagiaVoluntad" name="mod.de.magia"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="modVariosVoluntad" name="mod.varios"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.temporales"></td>
+                <td><input type="number" id="modTemporalesVoluntad" name="mod.temporales"></td>
                 <td>+</td>
-                <td><input type="text" name="punt.carisma"></td>
+                <td><input type="text" id="modCondicionalesVoluntad" name="mod.condicionales"></td>
+                <td>
+                    <button type="button" id="calcularTiroVoluntad">Calcula</button>
+                </td>
             </tr>
         </table>
         <!--Table-->
@@ -406,33 +418,39 @@
                 <td class="maintitle">
                     Cuerpo a<br>cuerpo
                 </td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" id="totalCuerpo" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="ataque.base"></td>
+                <td><input type="number" id="ataqueBaseCuerpo" name="ataque.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.fuerza"></td>
+                <td><input type="number" id="modFuerzaCuerpo" name="mod.fuerza"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.tamaño"></td>
+                <td><input type="number" id="modTamañoCuerpo" name="mod.tamaño"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="modVariosCuerpo" name="mod.varios"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.temporales"></td>
+                <td><input type="number" id="modTemporalesCuerpo" name="mod.temporales"></td>
+                <td>
+                    <button type="button" id="calcularCombateCuerpo">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <td class="maintitle">
                     A distancia
                 </td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" id="totalDistancia" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="ataque.base"></td>
+                <td><input type="number" id="ataqueBaseDistancia" name="ataque.base"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.fuerza"></td>
+                <td><input type="number" id="modFuerzaDistancia" name="mod.fuerza"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.tamaño"></td>
+                <td><input type="number" id="modTamañoDistancia" name="mod.tamaño"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="modVariosDistancia" name="mod.varios"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.temporales"></td>
+                <td><input type="number" id="modTemporalesDistancia" name="mod.temporales"></td>
+                <td>
+                    <button type="button" id="calcularCombateDistancia">Calcula</button>
+                </td>
             </tr>
         </table>
         <!--Table-->
@@ -522,7 +540,7 @@
             </th>
             <tr>
                 <td>
-                    <input type="text" name="nombre.armadura.obj.protector">
+                    <input type="text" class="space" name="nombre.armadura.obj.protector">
                 </td>
                 <td>
                     <input type="text" name="tipo">
@@ -639,33 +657,39 @@
             </tr>
             <tr>
                 <th class="maintitle">
-                    Abrir cerraduras
+                    Abrir Cerraduras
                 </th>
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalCerraduras" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modCerraduras" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosCerraduras" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosCerraduras" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularCerraduras" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
-                    Averiguar intenciones
+                    Averiguar Intenciones
                 </th>
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalIntenciones" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modIntenciones" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosIntenciones" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosIntenciones" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularIntenciones" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -674,13 +698,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalArtesania" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modArtesania" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosArtesania" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosArtesania" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularArtesania" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -689,13 +716,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalAvistar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modAvistar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosAvistar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosAvistar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularAvistar" class="button_classes">Calcula</button>
+                </td>
             <tr>
                 <th class="maintitle">
                     Buscar
@@ -703,13 +733,16 @@
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalBuscar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modBuscar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosBuscar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosBuscar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularBuscar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -718,13 +751,16 @@
                 <th class="skilltitle">
                     CON
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalConcentración" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modConcentración" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosConcentración" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosConcentración" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularConcentración" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -733,13 +769,16 @@
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEscritura" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEscritura" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEscritura" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEscritura" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEscritura" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -748,13 +787,16 @@
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalDiplomacia" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modDiplomacia" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosDiplomacia" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosDiplomacia" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularDiplomacia" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -763,13 +805,16 @@
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalDisfrazarse" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modDisfrazarse" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosDisfrazarse" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosDisfrazarse" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularDisfrazarse" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -778,13 +823,16 @@
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEngañar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEngañar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEngañar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEngañar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEngañar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -793,13 +841,16 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEquilibrio" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEquilibrio" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEquilibrio" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEquilibrio" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEquilibrio" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -808,13 +859,16 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEscapismo" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEscapismo" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEscapismo" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEscapismo" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEscapismo" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -823,13 +877,16 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEsconderse" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEsconderse" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEsconderse" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEsconderse" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEsconderse" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -838,13 +895,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalEscuchar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modEscuchar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosEscuchar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosEscuchar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularEscuchar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -853,13 +913,16 @@
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalFalsificar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modFalsificar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosFalsificar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosFalsificar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularFalsificar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -868,13 +931,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalInterpetrar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modInterpetrar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosInterpetrar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosInterpetrar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularInterpetrar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -883,28 +949,34 @@
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalIntimidar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modIntimidar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosIntimidar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosIntimidar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularIntimidar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
-                    Inutilizar mecanismo
+                    Inutilizar Mecanismo
                 </th>
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalMecanismo" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modMecanismo" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosMecanismo" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosMecanismo" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularMecanismo" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -913,13 +985,16 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalHurtar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modHurtar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosHurtar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosHurtar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularHurtar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -928,28 +1003,34 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalMontar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modMontar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosMontar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosMontar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularMontar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
-                    Moverse sigilosamente
+                    Moverse Sigilosamente
                 </th>
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalSigilosamente" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modSigilosamente" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosSigilosamente" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosSigilosamente" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularSigilosamente" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -958,13 +1039,16 @@
                 <th class="skilltitle">
                     FUE
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalNadar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modNadar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosNadar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosNadar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularNadar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -973,28 +1057,34 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalPiruetas" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modPiruetas" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosPiruetas" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosPiruetas" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularPiruetas" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
-                    Reunir información
+                    Reunir Información
                 </th>
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalInformación" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modInformación" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosInformación" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosInformación" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularInformación" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1003,13 +1093,16 @@
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalSaber" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modSaber" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosSaber" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosSaber" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularSaber" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1018,13 +1111,16 @@
                 <th class="skilltitle">
                     FUE
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalSaltar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modSaltar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosSaltar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosSaltar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularSaltar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1033,13 +1129,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalSanar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modSanar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosSanar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosSanar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularSanar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1048,13 +1147,16 @@
                 <th class="skilltitle">
                     SAB
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalSuperviviencia" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modSuperviviencia" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosSuperviviencia" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosSuperviviencia" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularSuperviviencia" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1063,28 +1165,34 @@
                 <th class="skilltitle">
                     INT
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalTasación" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modTasación" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosTasación" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosTasación" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularTasación" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
-                    Trato con animales
+                    Trato con Animales
                 </th>
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalAnimales" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modAnimales" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosAnimales" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosAnimales" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularAnimales" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1093,13 +1201,16 @@
                 <th class="skilltitle">
                     FUE
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalTrepar" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modTrepar" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosTrepar" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosTrepar" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularTrepar" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1108,13 +1219,16 @@
                 <th class="skilltitle">
                     CAR
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalMágico" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modMágico" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosMágico" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosMágico" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularMágico" class="button_classes">Calcula</button>
+                </td>
             </tr>
             <tr>
                 <th class="maintitle">
@@ -1123,13 +1237,16 @@
                 <th class="skilltitle">
                     DES
                 </th>
-                <td><input type="number" name="mod.habilidad"></td>
+                <td><input type="number" id="totalCuerdas" name="mod.habilidad"></td>
                 <td>=</td>
-                <td><input type="number" name="mod.caract."></td>
+                <td><input type="number" id="modCuerdas" name="mod.caract."></td>
                 <td>+</td>
-                <td><input type="number" name="rangos"></td>
+                <td><input type="number" id="rangosCuerdas" name="rangos"></td>
                 <td>+</td>
-                <td><input type="number" name="mod.varios"></td>
+                <td><input type="number" id="variosCuerdas" name="mod.varios"></td>
+                <td>
+                    <button type="button" id="calcularCuerdas" class="button_classes">Calcula</button>
+                </td>
             </tr>
         </table>
 
