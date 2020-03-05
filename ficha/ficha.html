@@ -11,19 +11,20 @@
     <link
         href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Cinzel|Great+Vibes|Lobster+Two|Ubuntu+Condensed&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico|Permanent+Marker|Trade+Winds&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Special+Elite&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
     <header>
         <nav class="topnav">
-            <a href="../home/home.html" class="active"><img src='../images/logo_dd.png' class='tamañologo' alt='Logo D&D'></a>
+            <a href="../home/home.html" class="active"><img src='../images/logo_dd.png' class='tamañologo'
+                    alt='Logo D&D'></a>
             <div id="myLinks">
                 <a href="../home/home.html">Home</a>
                 <a href="../begin/begin.html">Knowledge</a>
@@ -54,6 +55,20 @@
             <div class="title">Deidad<input type="text" name="Deidad"></div>
             <div class="title">Alineamiento<input type="text" name="Alineamiento"></div>
             <div class="title">Tamaño<input type="text" name="Tamaño"></div>
+        </div>
+        <div class="dices_font">
+            <input type=image src="./images/icono_strength.png" id="buttStrength">Obtén Fuerza</input>
+            <input type="number" id="strengthDice">
+            <input type=image src="./images/icono_destreza.png" id="buttDexterity">Obtén Destreza</input>
+            <input type="number" id="dexterityDice">
+            <input type=image src="./images/icono_constitucion.jpg" id="buttPhysical">Obtén Constitución</input>
+            <input type="number" id="physicalDice">
+            <input type=image src="./images/icono_inteligencia.png" id="buttIntelligence">Obtén Inteligencia</input>
+            <input type="number" id="intelligenceDice">
+            <input type=image src="./images/icono_sabiduria.png" id="buttWisdom">Obtén Sabiduría</input>
+            <input type="number" id="wisdomDice">
+            <input type=image src="./images/icono_carisma.jpg" id="buttCharisma">Obtén Carisma</input>
+            <input type="number" id="charismaDice">
         </div>
     </section>
 
@@ -151,23 +166,23 @@
                 <td class="maintitle">
                     Clase Armadura
                 </td>
-                <td><input type="number" name="esp.blanco"></td>
+                <td><input type="number" id="totalClaseArmadura" name="total"></td>
                 <td>=</td>
-                <td><input type="number" name="total"></td>
+                <td><input type="number" idname="esp.blanco"></td>
                 <td>+</td>
-                <td><input type="number" name="bonif.armadura"></td>
+                <td><input type="number" id="bonifArmadura" name="bonif.armadura"></td>
                 <td>+</td>
-                <td><input type="number" name="bonif.escudo"></td>
+                <td><input type="number" id="bonifEscudo" name="bonif.escudo"></td>
                 <td>+</td>
-                <td><input type="number" name="bonif.destreza"></td>
+                <td><input type="number" id="bonifDestreza" name="bonif.destreza"></td>
                 <td>+</td>
-                <td><input type="number" name="bonig.tamaño"></td>
+                <td><input type="number" id="bonifTamano" name="bonif.tamaño"></td>
                 <td>+</td>
-                <td><input type="number" name="armad.natural"></td>
+                <td><input type="number" id="armaduraNatural" name="armad.natural"></td>
                 <td>+</td>
-                <td><input type="number" name="bonif.desvío"></td>
+                <td><input type="number" id="bonificacionDesvio" name="bonif.desvío"></td>
                 <td>+</td>
-                <td><input type="number" name="bonif.varios"></td>
+                <td><input type="number" id="bonificacionVarios" name="bonif.varios"></td>
             </tr>
         </table>
         <!--Table-->
@@ -253,11 +268,11 @@
                 </th>
             </tr>
             <tr>
-                <td><input type="number" name="modificador.iniciativa"></td>
+                <td><input type="number" id="modificadorDeIniciativa" name="modificador.iniciativa"></td>
                 <td>=</td>
-                <td><input type="number" name="bonif.destreza"></td>
+                <td><input type="number" id="bonifDestreza" name="bonif.destreza"></td>
                 <td>+</td>
-                <td><input type="number" name="modificadores"></td>
+                <td><input type="number" id="modificadores" name="modificadores"></td>
             </tr>
         </table>
 
@@ -450,6 +465,7 @@
 
             <!--Table-->
             <table>
+
                 <th class="title">
                     Arma/Ataque
                 </th>
@@ -480,7 +496,7 @@
                         <textarea rows="8" cols="40"></textarea>
                     </td>
                 </tr>
-                
+
             </table>
         </div>
         <!--Table-->

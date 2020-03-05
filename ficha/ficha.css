@@ -33,7 +33,7 @@ breakpoint {
     display: none;
 }
 
-.space{
+.space {
     width: 150px;
 }
 
@@ -88,10 +88,80 @@ table td {
     margin: 15px;
     display: flex;
     flex-direction: column;
-    background-image: url("./images/img_princ_datos_player.jpg");
-    background-size: 15vw;
-    background-position: right;
-    background-repeat: no-repeat;
+}
+
+#strengthDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttStrength {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#dexterityDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttDexterity {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#physicalDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttPhysical {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#intelligenceDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttIntelligence {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#wisdomDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttWisdom {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+#charismaDice {
+    width: 30px;
+    height: 30px;
+}
+
+#buttCharisma {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.dices_font {
+    font-size: 13px;
+}
+
+.dices_font input {
+    cursor: url("http://cur.cursors-4u.net/sports/spo-1/spo58.cur"), auto !important;
 }
 
 .datosjugador div {
@@ -217,7 +287,7 @@ textarea {
 }
 
 .ammo td {
-   padding: 0;
+    padding: 0;
 }
 
 .title {
