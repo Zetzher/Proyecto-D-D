@@ -20,46 +20,51 @@ function chooseStats() {
 let buttonStrength = document.getElementById("buttStrength");
 let strengthInput = document.getElementById("strengthDice");
 
-buttonStrength.onclick = function (){
+buttonStrength.onclick = function () {
   return strengthInput.value = chooseStats();
 }
 
 let buttonDexterity = document.getElementById("buttDexterity");
 let dexterityInput = document.getElementById("dexterityDice");
 
-buttonDexterity.onclick = function (){
+buttonDexterity.onclick = function () {
   return dexterityInput.value = chooseStats();
 }
 
 let buttPhysical = document.getElementById("buttPhysical");
 let physicalInput = document.getElementById("physicalDice");
 
-buttPhysical.onclick = function (){
+buttPhysical.onclick = function () {
   return physicalInput.value = chooseStats();
 }
 
 let buttIntelligence = document.getElementById("buttIntelligence");
 let intelligenceInput = document.getElementById("intelligenceDice");
 
-buttIntelligence.onclick = function (){
+buttIntelligence.onclick = function () {
   return intelligenceInput.value = chooseStats();
 }
 
 let buttWisdom = document.getElementById("buttWisdom");
 let wisdomInput = document.getElementById("wisdomDice");
 
-buttWisdom.onclick = function (){
+buttWisdom.onclick = function () {
   return wisdomInput.value = chooseStats();
 }
 
 let buttCharisma = document.getElementById("buttCharisma");
 let charismaInput = document.getElementById("charismaDice");
 
-buttCharisma.onclick = function (){
+buttCharisma.onclick = function () {
   return charismaInput.value = chooseStats();
 }
 
 //Corresponde a clase armadura//
+
+let totalClaseArmadura = document.getElementById("totalClaseArmadura")
+let calcularButton = document.getElementById("calcularStats")
+
+let espBlanco = document.getElementById("espBlanco");
 let bonifArmadura = document.getElementById("bonifArmadura");
 let bonifEscudo = document.getElementById("bonifEscudo");
 let bonifDestreza = document.getElementById("bonifDestreza");
@@ -67,15 +72,22 @@ let bonifTamaño = document.getElementById("bonifTamaño");
 let armaduraNatural = document.getElementById("armaduraNatural");
 let bonificacionDesvio = document.getElementById("bonificacionDesvio");
 let bonificacionVarios = document.getElementById("bonificacionVarios");
-let total = document.getElementById("totalClaseArmadura");
 
+espBlanco.value = 0;
+bonifArmadura.value = 0;
+bonifEscudo.value = 0;
+bonifDestreza.value = 0;
+bonifTamano.value = 0;
+armaduraNatural.value = 0;
+bonificacionDesvio.value = 0;
+bonificacionVarios.value = 0;
 
-let claseArmadura = [bonifArmadura.value, bonifEscudo.value, bonifDestreza.value, bonifTamano.value, armaduraNatural.value, bonificacionDesvio.value, bonificacionVarios.value]
+calcularClaseArmadura.onclick = function () {
+  return totalClaseArmadura.value = claseArmadura();
+}
 
-function sumArrays(arr){
-  for(let i = 0; i < arr.length; i++){
-total.reduce((a => a - arr[i]))
-  }
+function claseArmadura(){
+  return  parseInt(espBlanco.value) + parseInt(bonifArmadura.value) + parseInt(bonifEscudo.value) + parseInt(bonifDestreza.value) + parseInt(bonifTamano.value) + parseInt(armaduraNatural.value) + parseInt(bonificacionDesvio.value) + parseInt(bonificacionVarios.value);
 }
 
 

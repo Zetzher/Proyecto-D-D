@@ -43,6 +43,7 @@
         <div class="infopnj">
             <div class="title">Nombre del personaje<input type="text" name="Nombre PNJ"></div>
             <div class="title">Jugador<input type="text" name="Jugador"></div>
+
         </div>
         <div class="infopnj1">
             <div class="title">Clase y niveles<input type="text" name="Clase y Niveles"></div>
@@ -70,6 +71,7 @@
             <input type=image src="./images/icono_carisma.jpg" id="buttCharisma">Obtén Carisma</input>
             <input type="number" id="charismaDice">
         </div>
+
     </section>
 
     <!--Table-->
@@ -168,7 +170,7 @@
                 </td>
                 <td><input type="number" id="totalClaseArmadura" name="total"></td>
                 <td>=</td>
-                <td><input type="number" idname="esp.blanco"></td>
+                <td><input type="number" id="espBlanco" name="esp.blanco"></td>
                 <td>+</td>
                 <td><input type="number" id="bonifArmadura" name="bonif.armadura"></td>
                 <td>+</td>
@@ -183,6 +185,11 @@
                 <td><input type="number" id="bonificacionDesvio" name="bonif.desvío"></td>
                 <td>+</td>
                 <td><input type="number" id="bonificacionVarios" name="bonif.varios"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="calcularClaseArmadura">Calcula</button>
+                </td>
             </tr>
         </table>
         <!--Table-->
